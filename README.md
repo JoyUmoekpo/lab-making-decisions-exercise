@@ -1,5 +1,3 @@
-# making-decisions-lab-exercise
-
 # Making Decisions Lab
 
 ## Instructions
@@ -54,16 +52,20 @@ The remote’s address
 
 Putting all of the above together, here’s the command to connect your GitHub repo and local repo together:
 
+```
 $ git remote add origin REPLACE_THIS_WITH_YOUR_URL
+```
+
 When we add a remote, much like when we do any other configuration, it only exists for that repository. Outside of the folder our repository is in, none of these settings exist.
 
 Now we have a remote — this is like a portal that goes to whatever URL we point at. So, now that we’ve established a portal link, what do we do with it? Same thing you’d probably do if you actually opened a portal to the server room at GitHub. Push things through it and see what happens.
 
+```
 $ git push REPLACE_WITH_REMOTE_NAME main
+```
+
 Replace [remote name] (no square brackets) with the name you used when you added the remote (it’s probably origin). You might wonder about what main is — that’s the name of the branch. For now, we’ll just have one branch, so we’ll always type main there. In the Further Study section, there’s some information about branching.
 
 Once you’ve git push-ed, Git will ask you for a username. This is your GitHub username. Then it will ask for your password. (When you type a password, you may be used to seeing asterisks (*) appear; in this case, nothing will. Don’t worry! It’s still working. This is just another way of hiding your password.)
 
 After this, head over to your GitHub profile. You should see that your new repo has been created, and that any files you’ve added have been pushed to the server. Pushing code to GitHub is the simplest way to back up your work to the cloud, share code between teams, and make sure you remember what you did and when you did it (complete with notes to yourself!).
-
-Congratulations on pushing your first exercise!
